@@ -2,7 +2,8 @@ import cv2
 import numpy as np
 
 def main():
-    cap = cv2.VideoCapture(0)
+    # input video from smartphone
+    cap = cv2.VideoCapture("http://192.168.1.103:8080/video")
 
     while(True):
         # Capture frame-by-frame
