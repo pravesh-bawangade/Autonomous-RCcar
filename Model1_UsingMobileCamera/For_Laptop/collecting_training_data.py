@@ -93,6 +93,7 @@ class CollectingData:
         # When everything done, release the capture
         cap.release()
         cv2.destroyAllWindows()
+        pygame.quit()
 
 
 if __name__ == "__main__":
