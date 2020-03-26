@@ -89,3 +89,12 @@ class CNN:
         except Exception as e:
             print(e)
         return out.argmax(-1)
+
+
+if __name__ == "__main__":
+
+    # @TODO: test this code
+    X = np.zeros((240, 320))
+    network = CNN()
+    network.train((240, 320), "/data.npz")
+    network.predict(X)
