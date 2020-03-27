@@ -4,9 +4,9 @@ import serial
 
 
 def main(url, input_size, model_path, serial_port):
-    STREAM = url
+
     ser = serial.Serial(serial_port, 115200, timeout=1)
-    cap = cv2.VideoCapture(STREAM)
+    cap = cv2.VideoCapture(url)
     while True:
         # Capture frame
         ret, frame = cap.read()
